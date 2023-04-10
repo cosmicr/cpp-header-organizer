@@ -55,6 +55,11 @@ This VS Code extension will organise headers using the following rules:
 #include "TileMap.h"
 ```
 
+## How to use
+
+1. Bring up the command palette in VSCode.
+2. Select "Organise C++ Headers"
+
 ## Requirements
 
 No specific requirements, other than a recent version of VSCode. I made the extension with VSCode 1.77
