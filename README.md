@@ -17,6 +17,44 @@ This VS Code extension will organise headers using the following rules:
 
 2. Headers should be in alphabetical order within each group.
 
+**Example input:**
+
+```cpp
+#include "Game.h"
+#include <SFML/Graphics.hpp>
+#include <iostream>
+#include <fstream>
+#include <queue>
+#include <memory>
+#include <imgui-SFML.h>
+#include <imgui.h>
+#include "TileMap.h"
+#include "ResourceManager.h"
+#include <nlohmann/json.hpp>
+#include <filesystem>
+```
+
+**Example output:**
+
+```cpp
+// Standard library headers
+#include <fstream>
+#include <iostream>
+#include <memory>
+#include <queue>
+
+// Third-party library headers
+#include <SFML/Graphics.hpp>
+#include <imgui-SFML.h>
+#include <imgui.h>
+#include <nlohmann/json.hpp>
+
+// Application headers
+#include "Game.h"
+#include "ResourceManager.h"
+#include "TileMap.h"
+```
+
 ## Requirements
 
 No specific requirements, other than a recent version of VSCode. I made the extension with VSCode 1.77
